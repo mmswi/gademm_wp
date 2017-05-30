@@ -1,0 +1,26 @@
+//importing variables
+@import "helpers/variables";
+//normalize reset
+@import "base/normalize";
+//importing skeleton
+@import "base/grid";
+//importing skeleton
+@import "base/skeleton";
+//importing base styles
+@import "base/base";
+//importing the slick carousel
+@import "components/slick";
+//importing navigation
+@import "components/navigation";
+//importing buttons
+// @import "components/buttons";
+//importing carousel
+@import "components/swipebox";
+//importing footer
+@import "components/footer";
+//importing inputs
+// @import "components/inputs";
+// importing homepage styles
+@import "pages/homepage";
+// importing about-template styles
+@import "pages/about-templates";

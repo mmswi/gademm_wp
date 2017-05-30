@@ -1,0 +1,152 @@
+#homepage-video {
+    visibility: hidden;
+    height: 35rem;
+    width: 100%;
+    @media(min-width: $sm-breakpoint) {
+        height: 40rem;
+    }
+    @media (min-width: $md-breakpoint) {
+        height: 45rem;        
+    }
+    @media (min-width: $lg-breakpoint) {
+        height: 50rem;        
+    }
+}
+
+.video-container.homepage {
+    background: center/cover no-repeat;
+}
+
+/*--------------------------------------------------------------
+# Masonry plugin
+--------------------------------------------------------------*/
+
+/* ---- .grid-item ---- */
+
+.grid-sizer {
+  width: 5%;
+}
+
+.grid-item {
+  float: left;
+}
+
+.grid-item img {
+  display: block;
+  width: 100%;
+}
+
+.grid-item {
+  width: 100%;
+  height: auto;
+  &:not('.position-0') {
+      background: none;
+  }
+  img {
+      height: 100%;
+  }
+  @media (min-width: $sm-breakpoint) {
+        background: center/cover no-repeat;
+  }
+    &.position-0 {      
+      @media (min-width: $sm-breakpoint) {
+        width: 50%;
+        height: 40rem;
+      }
+      @media (min-width: $md-breakpoint) {
+        height: 45rem;        
+      }
+      @media (min-width: $lg-breakpoint) {
+        height: 50rem;
+      }
+      @media (min-width: $xxl-breakpoint) {}
+      
+    }
+    &.postition-1 {
+      @media (min-width: $sm-breakpoint) {
+        width: 50%;
+        height: 40rem;
+      }
+      @media (min-width: $md-breakpoint) {
+        height: 45rem;                
+      }
+      @media (min-width: $lg-breakpoint) {
+        height: 50rem;
+      }
+      @media (min-width: $xxl-breakpoint) {}
+    }
+    &.postition-2 {
+      @media (min-width: $sm-breakpoint) {
+        width: 50%;
+        height: 30rem;
+        background-position: bottom right;
+      }
+      @media (min-width: $md-breakpoint) {
+        height: 35rem;                
+      }
+      @media (min-width: $lg-breakpoint) {
+        height: 40rem;
+      }
+      @media (min-width: $xxl-breakpoint) {
+        height: 45rem;
+      }
+    }
+    &.postition-3 {
+      @media (min-width: $sm-breakpoint) {
+        width: 50%;
+        height: 30rem;
+      }
+      @media (min-width: $md-breakpoint) {
+        height: 35rem;
+      }
+      @media (min-width: $lg-breakpoint) {
+        height: 40rem;
+      }
+      @media (min-width: $xxl-breakpoint) {
+        height: 45rem;
+      }
+    }
+    &.postition-4 {
+      @media (min-width: $sm-breakpoint) {
+        width: 40%;
+        height: 30rem;
+      }
+      @media (min-width: $md-breakpoint) {
+        height: 40rem;
+      }
+      @media (min-width: $lg-breakpoint) {
+        height: 45rem;
+      }
+      @media (min-width: $xxl-breakpoint) {}
+    }
+    &.postition-5 {
+      @media (min-width: $sm-breakpoint) {
+        width: 30%;
+        height: 30rem;
+        background-position: top center;
+      }
+      @media (min-width: $md-breakpoint) {
+        width: 20%;
+        height: 40rem;
+        background: #000 center / contain no-repeat;
+      }
+      @media (min-width: $lg-breakpoint) {
+        height: 45rem;
+      }
+      @media (min-width: $xxl-breakpoint) {}
+    }
+    &.postition-6 {
+      @media (min-width: $sm-breakpoint) {
+        width: 30%;
+        height: 30rem;
+      }
+      @media (min-width: $md-breakpoint) {
+        width: 40%;
+        height: 40rem;
+      }
+      @media (min-width: $lg-breakpoint) {
+        height: 45rem;
+      }
+      @media (min-width: $xxl-breakpoint) {}
+    }
+}

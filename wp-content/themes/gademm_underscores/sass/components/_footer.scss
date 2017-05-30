@@ -1,0 +1,49 @@
+.site-footer {
+    background-color: $footer-bg;
+    padding: 7rem 1.5rem;
+}
+
+#menu-footer-menu {
+    font-family: $sans-font-2;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.1em;
+    li {
+        display: inline-block;
+        margin-left: 2rem;
+    }
+    a {
+        color: $blue-color;
+        &:hover {
+            color: $darker-white;
+        }
+    }
+    &.terms {
+        margin-bottom: 3rem;
+    }
+    &.social {
+        margin-bottom: 10rem;
+        @media (min-width: $sm-breakpoint) {
+            margin-top: 3rem;
+            text-align: justify;
+            li {
+                margin: 0 10% 0 0;
+                @media (min-width: $sm-breakpoint) {
+                    margin: 0 15% 0 0;
+                }
+            }
+        }
+    }
+    @media (min-width: $sm-breakpoint) {
+        margin-bottom: 4rem;
+    }
+    @media (min-width: 1200px) {
+        margin-bottom: 7rem;
+        font-size: 1.2em;
+    }
+}
+
+.footer-logo {
+    display: inline-block;
+    margin: 2rem auto 5rem;
+}

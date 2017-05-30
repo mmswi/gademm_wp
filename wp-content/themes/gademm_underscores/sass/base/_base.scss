@@ -1,0 +1,188 @@
+//font sizes in the site
+
+h1 {
+    font-size: 1.250em; //20px
+    @media (min-width: $sm-breakpoint) {
+        font-size: 2em; //32px
+    }
+}
+
+h2, h3 {
+    font-size: 1.125em; //18px
+    @media (min-width: $sm-breakpoint) {
+        font-size: 1.750em; //28px
+    }
+}
+
+header {
+    z-index: 1;
+}
+
+footer {
+    font-size: 0.875em; //14px
+}
+
+.button {
+    font-size: 1.125em;
+}
+
+
+body {
+    background-color: $bg-color;
+    line-height: 1.6;
+    font-family: $sans-font, Arial;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.text-center {
+    text-align: center!important;
+}
+
+.text-right {
+    text-align: right!important;
+}
+
+.text-left {
+    text-align: left!important;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    &:hover {
+        color: $red-color;
+    }
+}
+
+.container {
+    color: $font-color;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.relative-container {
+    position: relative;
+}
+
+.no-pad {
+    padding: 0;
+}
+
+.page-padding {
+    padding: 5rem 0;
+}
+
+.search-container {
+    @media (max-width: $sm-breakpoint) {
+        width: 100%;
+    }
+    display: inline-block;
+    position: relative;
+    .fa {
+        position: absolute;
+        color: $gray;
+        right: 0.7rem;
+        top: 0.8rem;
+    }
+}
+
+.page-intro {
+    text-align: center;
+}
+
+.page-description {
+    padding-bottom: 3rem;
+}
+
+.page-title {
+    font-family: $sans-font;
+    font-size: 3.5em;
+    margin-bottom: 0.6em;
+}
+
+.page-description {
+    font-family: $sans-font-2;
+    font-size: 1.3em;
+}
+
+
+.pagination li {
+    display: inline-block;
+    width: 2rem;
+    margin-right: 1rem;
+    &.active {
+        background-color: $red-color;
+        a {
+            color: $darker-white;
+        }
+
+    }
+}
+
+.page-filter-text {
+    font-size: 0.875em;
+    color: $red-color;
+}
+
+
+.margin-bottom-15 {
+    margin-bottom: 1.5rem;
+}
+
+.margin-top-15 {
+    margin-top: 1.5rem;
+}
+
+.margin-bottom-0 {
+    margin-bottom: 0;
+}
+
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slider-arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+
+    &.left {
+        left: 1rem;
+    }
+    &.right {
+        right: 1rem;
+    }
+}
+
+.line-text {
+    background-color: $gray;
+    position: relative;
+    height: 0.2rem;
+    margin-bottom: 2rem;
+}
+
+.text-in-line {
+    position: absolute;
+    display: inline-block;
+    padding: 0 1rem;
+    background-color: $bg-color;    
+    &.center {
+        left: 50%;
+    }
+    &.page-subtitle {
+        font-size: 2.5em; 
+        font-family: $hand-writing;
+        top: -2rem;
+        line-height: 1em;
+    }
+}
