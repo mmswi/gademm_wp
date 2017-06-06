@@ -135,11 +135,13 @@
     }
     .sub-menu {
         background-color: $white;
+        padding-bottom: 1rem;
         @media (max-width: $sm-breakpoint - 1) {
             width: 100%;
         }
         @media (min-width: $sm-breakpoint) {
-            margin-top: 2.5rem;
+            margin-top: 1rem;
+            margin-left: -60%;
         }
     }
 }

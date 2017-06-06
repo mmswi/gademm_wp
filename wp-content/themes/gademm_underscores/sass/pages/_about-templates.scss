@@ -1,21 +1,29 @@
 .about-us-template-hero {
     position: relative;
+    img {
+        height: auto;
+    }
+}
+
+.about-us-template-title-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .about-us-template-title {
-    position: absolute;
-    bottom: 40%;
-
     font-size: 2em;
-    left: 50%;
-    margin-left: -4em;
-    @media (min-width: 768px) {
+    text-align: center;
+    width: 100%;
+    @media (min-width: $sm-breakpoint) {
         font-size: 3em;
-        margin-left: -4.5em;
     }
-    @media (min-width: 1200px) {
+    @media (min-width: $lg-breakpoint) {
         font-size: 4em;
-        margin-left: -4em;
     }
 }
 
@@ -23,35 +31,76 @@
     padding: 8rem 0 8rem;
     text-align: center;
     color: $brown-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     .title {
         font-size: 2em;
-        @include text-shadow(rgba($gray, 0.4) 1px 1px 0);
+        text-shadow: 1px 1px 0 rgba($gray, 0.4);
         @media(min-width: 1200px) {
             font-size: 2.5em;
         }
     }
+    p {
+        width: 50%;
+    }
 }
 
-.featured-lead {
-    padding: 8rem 0;
+.about-us-video {
+    width: 100%;
+    height: 18rem;
+    @media(min-width: $sm-breakpoint) {
+        height: 30rem;
+    }
 }
 
 .about-us-template-paragraph-container {
     text-align: center;
     background-color: $pink-color;
+    display: flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    flex-direction: column;
+    @media (min-width: $sm-breakpoint) {
+        flex-flow: row wrap;
+    }
+    &:nth-child(2n) {
+        flex-direction: column-reverse;
+        @media (min-width: $sm-breakpoint) {
+            flex-flow: row wrap;
+        }
+    }
+
+}
+
+.about-us-template-image {
+    width: 100%;
+    @media (min-width: $sm-breakpoint) {
+        width: 60%;
+    }
+    img {
+        height: auto;
+    }
 }
 
 .about-us-template-text {
-        .title {
-            @media (min-width: 992px) {
-                font-size: 2em;
-                line-height: 2.750em;
-            }
-        }
-        line-height: 3.8rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 3.8rem;
+    width: 100%;
+    font-size: 1.1em;
+    padding: 0 1.5rem;
+    @media(min-width: $sm-breakpoint) {
+        width: 40%;
         max-width: 40rem;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 1.1em;
-        padding: 0 1.5rem;
+    }
+    .title {
+        @media (min-width: $md-breakpoint) {
+            font-size: 2em;
+            line-height: 2.750em;
+        }
+    }
 }

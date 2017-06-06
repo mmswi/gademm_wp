@@ -28,7 +28,8 @@
     width: $xxl-breakpoint;
   }
 }
-.row {
+.row,
+.content-area {
   margin-right: -15px;
   margin-left: -15px;
 }
