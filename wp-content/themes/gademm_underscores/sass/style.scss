@@ -22,7 +22,11 @@
 @import "components/footer";
 //importing inputs
 // @import "components/inputs";
+// importing the cart styles
+@import "components/woocommercecart";
 // importing homepage styles
 @import "pages/homepage";
 // importing about-template styles
 @import "pages/about-templates";
+// importing product-categories styles
+@import "pages/product-categories";

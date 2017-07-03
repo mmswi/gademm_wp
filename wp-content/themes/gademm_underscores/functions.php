@@ -157,3 +157,60 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Adding action for subcategories big pictures
+ */
+
+ if ( ! function_exists( 'gademm_subcategory_thumbnail' ) ) {
+
+	/**
+	 * Show subcategory thumbnails.
+	 *
+	 * @param mixed $category
+	 * @subpackage	Loop
+	 */
+	function gademm_subcategory_thumbnail( $category ) {
+		// $small_thumbnail_size  	= apply_filters( 'subcategory_archive_thumbnail_size', 'shop_catalog' );
+		$small_thumbnail_size  	= ['1200', '500', '1'];
+		$dimensions    			= wc_get_image_size( ['1200', '500', 1] );
+		$thumbnail_id  			= get_woocommerce_term_meta( $category->term_id, 'thumbnail_id', true );
+
+		if ( $thumbnail_id ) {
+			$image        = wp_get_attachment_image_src( $thumbnail_id, $small_thumbnail_size );
+			$image        = $image[0];
+			$image_srcset = function_exists( 'wp_get_attachment_image_srcset' ) ? wp_get_attachment_image_srcset( $thumbnail_id, $small_thumbnail_size ) : false;
+			$image_sizes  = function_exists( 'wp_get_attachment_image_sizes' ) ? wp_get_attachment_image_sizes( $thumbnail_id, $small_thumbnail_size ) : false;
+		} else {
+			$image        = wc_placeholder_img_src();
+			$image_srcset = $image_sizes = false;
+		}
+
+		if ( $image ) {
+			// Prevent esc_url from breaking spaces in urls for image embeds
+			// Ref: https://core.trac.wordpress.org/ticket/23605
+			$image = str_replace( ' ', '%20', $image );
+
+			// Add responsive image markup if available
+			if ( $image_srcset && $image_sizes ) {
+				echo '<img src="' . esc_url( $image ) . '" alt="' . esc_attr( $category->name ) . '" width="' . esc_attr( $dimensions['width'] ) . '" height="' . esc_attr( $dimensions['height'] ) . '" srcset="' . esc_attr( $image_srcset ) . '" sizes="' . esc_attr( $image_sizes ) . '" />';
+			} else {
+				echo '<img src="' . esc_url( $image ) . '" alt="' . esc_attr( $category->name ) . '" width="' . esc_attr( $dimensions['width'] ) . '" height="' . esc_attr( $dimensions['height'] ) . '" />';
+			}
+		}
+	}
+}
+
+ add_action( 'gademm_before_subcategory_title', 'gademm_subcategory_thumbnail' );
+
+ /**
+ * Display the classes for the product cat div.
+ *
+ * @since 2.4.0
+ * @param string|array $class One or more classes to add to the class list.
+ * @param object $category object Optional.
+ */
+function gademm_product_cat_class( $class = '', $category = null ) {
+	// Separates classes with a single space, collates classes for post DIV
+	echo 'class="collection-item ' . esc_attr( join( ' ', wc_get_product_cat_class( $class, $category ) ) ) . '"';
+}

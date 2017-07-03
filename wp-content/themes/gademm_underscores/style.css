@@ -195,7 +195,7 @@ svg:not(:root) {
  */
 /* line 215, sass/base/_normalize.scss */
 figure {
-  margin: 1em 40px; }
+  margin: 0; }
 
 /**
  * Address differences between Firefox and other browsers.
@@ -1555,185 +1555,189 @@ there.
 /* Larger than tablet */
 /* Larger than desktop */
 /* Larger than Desktop HD */
-/* line 3, sass/base/_base.scss */
+/* line 2, sass/base/_base.scss */
+html {
+  font-size: 10px; }
+
+/* line 6, sass/base/_base.scss */
 h1 {
   font-size: 1.250em; }
   @media (min-width: 768px) {
-    /* line 3, sass/base/_base.scss */
+    /* line 6, sass/base/_base.scss */
     h1 {
       font-size: 2em; } }
 
-/* line 10, sass/base/_base.scss */
+/* line 13, sass/base/_base.scss */
 h2, h3 {
   font-size: 1.125em; }
   @media (min-width: 768px) {
-    /* line 10, sass/base/_base.scss */
+    /* line 13, sass/base/_base.scss */
     h2, h3 {
       font-size: 1.750em; } }
 
-/* line 17, sass/base/_base.scss */
+/* line 20, sass/base/_base.scss */
 header {
   z-index: 1; }
 
-/* line 21, sass/base/_base.scss */
+/* line 24, sass/base/_base.scss */
 footer {
   font-size: 0.875em; }
 
-/* line 25, sass/base/_base.scss */
+/* line 28, sass/base/_base.scss */
 .button {
   font-size: 1.125em; }
 
-/* line 30, sass/base/_base.scss */
+/* line 33, sass/base/_base.scss */
 body {
   background-color: #F2F1EF;
   line-height: 1.6;
   font-family: "Muli", sans-serif, Arial; }
 
-/* line 36, sass/base/_base.scss */
+/* line 39, sass/base/_base.scss */
 ul {
   list-style: none;
   padding: 0;
   margin: 0; }
 
-/* line 42, sass/base/_base.scss */
+/* line 45, sass/base/_base.scss */
 .text-center {
   text-align: center !important; }
 
-/* line 46, sass/base/_base.scss */
+/* line 49, sass/base/_base.scss */
 .text-right {
   text-align: right !important; }
 
-/* line 50, sass/base/_base.scss */
+/* line 53, sass/base/_base.scss */
 .text-left {
   text-align: left !important; }
 
-/* line 54, sass/base/_base.scss */
+/* line 57, sass/base/_base.scss */
 a {
   text-decoration: none;
   color: #000;
   cursor: pointer; }
-  /* line 58, sass/base/_base.scss */
+  /* line 61, sass/base/_base.scss */
   a:hover {
     color: #760015; }
 
-/* line 63, sass/base/_base.scss */
+/* line 66, sass/base/_base.scss */
 .container {
   color: #3C3C3D; }
 
-/* line 67, sass/base/_base.scss */
+/* line 70, sass/base/_base.scss */
 img {
   width: 100%;
   max-width: 100%; }
 
-/* line 72, sass/base/_base.scss */
+/* line 75, sass/base/_base.scss */
 .relative-container {
   position: relative; }
 
-/* line 76, sass/base/_base.scss */
+/* line 79, sass/base/_base.scss */
 .no-pad {
   padding: 0; }
 
-/* line 80, sass/base/_base.scss */
+/* line 83, sass/base/_base.scss */
 .page-padding {
   padding: 5rem 0; }
 
-/* line 84, sass/base/_base.scss */
+/* line 87, sass/base/_base.scss */
 .search-container {
   display: inline-block;
   position: relative; }
   @media (max-width: 768px) {
-    /* line 84, sass/base/_base.scss */
+    /* line 87, sass/base/_base.scss */
     .search-container {
       width: 100%; } }
-  /* line 90, sass/base/_base.scss */
+  /* line 93, sass/base/_base.scss */
   .search-container .fa {
     position: absolute;
     color: #6b6b77;
     right: 0.7rem;
     top: 0.8rem; }
 
-/* line 98, sass/base/_base.scss */
+/* line 101, sass/base/_base.scss */
 .page-intro {
   text-align: center; }
 
-/* line 102, sass/base/_base.scss */
+/* line 105, sass/base/_base.scss */
 .page-description {
   padding-bottom: 3rem; }
 
-/* line 106, sass/base/_base.scss */
+/* line 109, sass/base/_base.scss */
 .page-title {
   font-family: "Muli", sans-serif;
   font-size: 3.5em;
   margin-bottom: 0.6em; }
 
-/* line 112, sass/base/_base.scss */
+/* line 115, sass/base/_base.scss */
 .page-description {
   font-family: "Quicksand", sans-serif;
   font-size: 1.3em; }
 
-/* line 118, sass/base/_base.scss */
+/* line 121, sass/base/_base.scss */
 .pagination li {
   display: inline-block;
   width: 2rem;
   margin-right: 1rem; }
-  /* line 122, sass/base/_base.scss */
+  /* line 125, sass/base/_base.scss */
   .pagination li.active {
     background-color: #760015; }
-    /* line 124, sass/base/_base.scss */
+    /* line 127, sass/base/_base.scss */
     .pagination li.active a {
       color: #F2F1EF; }
 
-/* line 131, sass/base/_base.scss */
+/* line 134, sass/base/_base.scss */
 .page-filter-text {
   font-size: 0.875em;
   color: #760015; }
 
-/* line 137, sass/base/_base.scss */
+/* line 140, sass/base/_base.scss */
 .margin-bottom-15 {
   margin-bottom: 1.5rem; }
 
-/* line 141, sass/base/_base.scss */
+/* line 144, sass/base/_base.scss */
 .margin-top-15 {
   margin-top: 1.5rem; }
 
-/* line 145, sass/base/_base.scss */
+/* line 148, sass/base/_base.scss */
 .margin-bottom-0 {
   margin-bottom: 0; }
 
-/* line 149, sass/base/_base.scss */
+/* line 152, sass/base/_base.scss */
 .centered {
   margin-left: auto;
   margin-right: auto; }
 
-/* line 154, sass/base/_base.scss */
+/* line 157, sass/base/_base.scss */
 .slider-arrow {
   cursor: pointer;
   position: absolute;
   top: 50%; }
-  /* line 159, sass/base/_base.scss */
+  /* line 162, sass/base/_base.scss */
   .slider-arrow.left {
     left: 1rem; }
-  /* line 162, sass/base/_base.scss */
+  /* line 165, sass/base/_base.scss */
   .slider-arrow.right {
     right: 1rem; }
 
-/* line 167, sass/base/_base.scss */
+/* line 170, sass/base/_base.scss */
 .line-text {
   background-color: #6b6b77;
   position: relative;
   height: 0.2rem;
   margin-bottom: 2rem; }
 
-/* line 174, sass/base/_base.scss */
+/* line 177, sass/base/_base.scss */
 .text-in-line {
   position: absolute;
   display: inline-block;
   padding: 0 1rem;
   background-color: #F2F1EF; }
-  /* line 179, sass/base/_base.scss */
+  /* line 182, sass/base/_base.scss */
   .text-in-line.center {
     left: 50%; }
-  /* line 182, sass/base/_base.scss */
+  /* line 185, sass/base/_base.scss */
   .text-in-line.page-subtitle {
     font-size: 2.5em;
     font-family: "Meie Script", cursive;
@@ -1872,7 +1876,7 @@ img {
   /* line 133, sass/components/_slick.scss */
   .slick-prev:before {
     text-align: right;
-    background: transparent url("../images/arrow-prev.svg") no-repeat center center;
+    background: transparent url("../gademm_underscores/img/arrow-prev.svg") no-repeat center center;
     background-size: 3.4rem; }
 
 /* line 140, sass/components/_slick.scss */
@@ -1885,7 +1889,7 @@ img {
   /* line 146, sass/components/_slick.scss */
   .slick-next:before {
     text-align: right;
-    background: transparent url("../images/arrow-next.svg") no-repeat center center;
+    background: transparent url("../gademm_underscores/img/arrow-next.svg") no-repeat center center;
     background-size: 3.4rem; }
 
 /* line 153, sass/components/_slick.scss */
@@ -2774,5 +2778,273 @@ html.swipebox-html.swipebox-touch {
     .about-us-template-text .title {
       font-size: 2em;
       line-height: 2.750em; } }
+
+/* line 2, sass/pages/_product-categories.scss */
+.woocommerce-products-header .page-title {
+  text-align: center; }
+
+/* line 7, sass/pages/_product-categories.scss */
+.classic-essentials {
+  padding-top: 2rem; }
+  /* line 9, sass/pages/_product-categories.scss */
+  .classic-essentials ul.products {
+    margin: 0 -1.5rem 1em; }
+    /* line 11, sass/pages/_product-categories.scss */
+    .classic-essentials ul.products li.product-category {
+      float: none;
+      width: 100%;
+      position: relative; }
+      /* line 16, sass/pages/_product-categories.scss */
+      .classic-essentials ul.products li.product-category a img {
+        -o-object-fit: contain;
+           object-fit: contain; }
+
+/* line 24, sass/pages/_product-categories.scss */
+.woocommerce-result-count {
+  display: none; }
+
+/* line 28, sass/pages/_product-categories.scss */
+.gademm-products .product,
+.product-template-default.single .entry-summary {
+  border-radius: 2px !important;
+  background-color: #fff;
+  margin-bottom: 3rem !important;
+  text-align: center; }
+
+/* line 36, sass/pages/_product-categories.scss */
+.gademm-products .product {
+  padding: 0 1rem 1.5rem !important; }
+
+/* line 40, sass/pages/_product-categories.scss */
+.product-template-default.single .entry-summary {
+  padding: 4rem 4rem 0; }
+  @media (max-width: 767px) {
+    /* line 40, sass/pages/_product-categories.scss */
+    .product-template-default.single .entry-summary {
+      margin-top: 3rem; } }
+  @media (min-width: 768px) {
+    /* line 40, sass/pages/_product-categories.scss */
+    .product-template-default.single .entry-summary {
+      margin-left: 3rem;
+      float: left !important;
+      width: 41.66667% !important; } }
+  @media (min-width: 992px) {
+    /* line 40, sass/pages/_product-categories.scss */
+    .product-template-default.single .entry-summary {
+      width: 33.33333% !important; } }
+
+/* line 57, sass/pages/_product-categories.scss */
+.gademm-products .site-content,
+.product-template-default.single .site-content {
+  padding-top: 2rem; }
+
+/* line 60, sass/pages/_product-categories.scss */
+.gademm-products .woocommerce-loop-product__title,
+.product-template-default.single .woocommerce-loop-product__title {
+  margin: 1.5rem 0 0;
+  font-size: 0.9em;
+  letter-spacing: 0.2rem;
+  line-height: 1em;
+  font-weight: bold;
+  color: #760015; }
+
+/* line 68, sass/pages/_product-categories.scss */
+.gademm-products .price,
+.product-template-default.single .price {
+  font-size: 1em !important;
+  color: #222 !important; }
+
+/* line 72, sass/pages/_product-categories.scss */
+.gademm-products .woocommerce-Price-amount,
+.product-template-default.single .woocommerce-Price-amount {
+  font-size: 0.9em;
+  margin: 0.5rem 0 0;
+  font-weight: bold; }
+
+/* line 77, sass/pages/_product-categories.scss */
+.gademm-products .add_to_cart_button,
+.gademm-products .single_add_to_cart_button,
+.product-template-default.single .add_to_cart_button,
+.product-template-default.single .single_add_to_cart_button {
+  -webkit-transition: all 0.2s cubic-bezier(0.26, 0.04, 0.32, 1);
+  transition: all 0.2s cubic-bezier(0.26, 0.04, 0.32, 1);
+  height: 4rem;
+  display: block;
+  padding: 0 2.875rem 0 !important;
+  margin: 1.8rem auto;
+  line-height: 4rem !important;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1rem !important;
+  letter-spacing: 0.35em;
+  background-color: #494949 !important;
+  color: #F2F1EF !important;
+  border-radius: 2px;
+  max-width: 100%; }
+  /* line 95, sass/pages/_product-categories.scss */
+  .gademm-products .add_to_cart_button:focus,
+  .gademm-products .single_add_to_cart_button:focus,
+  .product-template-default.single .add_to_cart_button:focus,
+  .product-template-default.single .single_add_to_cart_button:focus {
+    background-color: #760015;
+    color: #F2F1EF; }
+  /* line 99, sass/pages/_product-categories.scss */
+  .gademm-products .add_to_cart_button:hover,
+  .gademm-products .single_add_to_cart_button:hover,
+  .product-template-default.single .add_to_cart_button:hover,
+  .product-template-default.single .single_add_to_cart_button:hover {
+    background-color: #760015 !important;
+    color: #F2F1EF !important; }
+  /* line 103, sass/pages/_product-categories.scss */
+  .gademm-products .add_to_cart_button.product-page,
+  .gademm-products .single_add_to_cart_button.product-page,
+  .product-template-default.single .add_to_cart_button.product-page,
+  .product-template-default.single .single_add_to_cart_button.product-page {
+    margin-top: 4.5rem; }
+
+@media (min-width: 768px) {
+  /* line 110, sass/pages/_product-categories.scss */
+  .product-template-default.single .woocommerce-product-gallery {
+    width: 58.33333% !important; } }
+
+/* line 115, sass/pages/_product-categories.scss */
+.product-template-default.single .product_title {
+  font-family: "Muli", sans-serif;
+  margin-bottom: 1rem;
+  font-size: 1.333em;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.35em; }
+
+/* line 123, sass/pages/_product-categories.scss */
+.product-template-default.single .price {
+  letter-spacing: 0.2em;
+  font-size: 0.933em;
+  border-bottom: 0.2rem solid #F2F1EF;
+  padding-bottom: 0.4em; }
+
+/* line 129, sass/pages/_product-categories.scss */
+.product-template-default.single .currency {
+  font-size: 0.8em;
+  letter-spacing: 0.2em; }
+
+/* line 133, sass/pages/_product-categories.scss */
+.product-template-default.single .p1 {
+  font-family: "Lora", serif;
+  letter-spacing: 0.1rem;
+  color: #8c8c8c;
+  font-size: 0.8em;
+  margin-bottom: 0; }
+  /* line 139, sass/pages/_product-categories.scss */
+  .product-template-default.single .p1 strong {
+    display: block;
+    font-family: "Muli", sans-serif;
+    color: #222;
+    font-size: 1.6em;
+    margin: 2rem 0 0.4rem 0 !important;
+    letter-spacing: -0.1rem; }
+  /* line 147, sass/pages/_product-categories.scss */
+  .product-template-default.single .p1 i {
+    font-style: normal; }
+
+/* line 151, sass/pages/_product-categories.scss */
+.product-template-default.single .woocommerce-product-details__short-description {
+  padding-bottom: 2rem;
+  border-bottom: 0.2rem solid #F2F1EF; }
+
+/* line 155, sass/pages/_product-categories.scss */
+.product-template-default.single .cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0 !important; }
+
+/* line 161, sass/pages/_product-categories.scss */
+.product-template-default.single .quantity {
+  display: none; }
+
+/* line 164, sass/pages/_product-categories.scss */
+.product-template-default.single .product_meta {
+  color: #8c8c8c;
+  padding-bottom: 2rem;
+  font-size: 0.9em; }
+
+/* line 172, sass/pages/_product-categories.scss */
+.collection-item.product-category {
+  margin: 0 !important; }
+
+/* line 176, sass/pages/_product-categories.scss */
+.collection-link {
+  display: block;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  line-height: 0; }
+  @media (min-width: 1200px) {
+    /* line 185, sass/pages/_product-categories.scss */
+    .collection-link:hover .collection-text {
+      opacity: 1; }
+    /* line 188, sass/pages/_product-categories.scss */
+    .collection-link:hover .collection-text-overlay {
+      opacity: 0.7; } }
+  /* line 193, sass/pages/_product-categories.scss */
+  .collection-link img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin: 0 !important; }
+
+/* line 199, sass/pages/_product-categories.scss */
+.collection-text {
+  position: absolute;
+  font-size: 2em;
+  top: 50%;
+  margin-top: -0.5em;
+  width: 100%;
+  line-height: 1;
+  text-align: center;
+  color: #F2F1EF; }
+  @media (max-width: 1199px) {
+    /* line 199, sass/pages/_product-categories.scss */
+    .collection-text {
+      text-shadow: rgba(0, 0, 0, 0.7) 2px 2px 2px; } }
+  @media (min-width: 992px) {
+    /* line 199, sass/pages/_product-categories.scss */
+    .collection-text {
+      font-size: 3.5em; } }
+  @media (min-width: 1200px) {
+    /* line 199, sass/pages/_product-categories.scss */
+    .collection-text {
+      opacity: 0;
+      -webkit-transition: opacity;
+      transition: opacity;
+      -webkit-transition-duration: 250ms;
+              transition-duration: 250ms;
+      -webkit-transition-timing-function: ease;
+              transition-timing-function: ease; } }
+
+/* line 222, sass/pages/_product-categories.scss */
+.collection-text-overlay {
+  opacity: 0;
+  -webkit-transition: opacity;
+  transition: opacity;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("../gademm_underscores/img/bg-collection.png") repeat;
+  top: 0; }
 
 /*# sourceMappingURL=maps/style.css.map */
