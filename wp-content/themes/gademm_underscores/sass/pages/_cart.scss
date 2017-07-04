@@ -1,0 +1,104 @@
+.woocommerce-cart-form {
+    width: 80%;
+    margin: 9rem auto 2.5rem;
+}
+
+.product-remove {
+    @media(min-width: $sm-breakpoint) {
+        width: 3%;
+    }    
+}
+
+tbody .product-thumbnail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-name {
+    @media(min-width: $sm-breakpoint) {
+        width: 50%;
+    }
+}
+
+.product-subtotal {
+    @media(min-width: $sm-breakpoint) {
+        text-align: right;
+    }
+}
+
+.product-quantity {
+    @media(min-width: $sm-breakpoint) {
+        text-align: center;
+    }
+}
+
+.coupon {
+    @media(min-width: $sm-breakpoint) {
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+    }
+    @media(min-width: $md-breakpoint) {
+        width: 40%;
+    }
+    .input-text,
+    .button {
+        width: 45% !important;
+    }
+    .button {
+        @media (max-width: $md-breakpoint - 1) {
+            font-size: 0.7em !important;
+        }
+        @media (min-width: $md-breakpoint) and (max-width: $lg-breakpoint - 1) {
+            font-size: 0.9em !important;
+        }
+    }
+}
+
+.cart_totals {
+    @media (max-width: $sm-breakpoint - 1) {
+        width: 80% !important;
+        margin: 0 auto;
+    }
+    @media (min-width: $sm-breakpoint) {
+        margin-right: 10%;
+    }
+    td {
+        text-align: right;
+    }
+}
+
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button,
+.woocommerce input.button.alt {
+    transition: all 0.2s cubic-bezier(0.26, 0.04, 0.32, 1);
+    padding: 0;
+    line-height: 1em;
+    height: auto;
+    font-size: 0.8em;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    padding: 1em 2em;
+    min-width: 23rem;
+    width: auto;
+    background-color: $footer-bg;
+    &:focus {
+        background-color: $red-color;
+        color: $darker-white;
+    }
+    &:hover {
+        background-color: $red-color!important;
+        color: $darker-white!important;
+    }
+    @media (min-width: $sm-breakpoint) {
+        float: right;
+    }
+}
+
+// Checkout page
+.woocommerce-checkout {
+    .woocommerce {
+        margin: 9rem auto 0;
+        width: 80%;
+    }
+}
